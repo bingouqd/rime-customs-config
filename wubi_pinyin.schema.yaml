@@ -18,11 +18,15 @@ switches:
     reset: 0
     states: [ 中文, 西文 ]
   - name: full_shape
+    reset: 0
     states: [ 半角, 全角 ]
   - name: extended_charset
+    reset: 0
     states: [ 常用, 增廣 ]
   - name: ascii_punct
-    states: [ ．，, 。， ]
+    reset: 1
+    states: [ 。，, ．， ]
+    
 
 engine:
   processors:
